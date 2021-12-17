@@ -1,0 +1,7 @@
+export const ADD_REVIEW = 'ADD_REVIEW';
+export const COURSES_LOADING = 'COURSES_LOADING';
+export const COURSES_FAILED = 'COURSES_FAILED';
+export const ADD_COURSES = 'ADD_COURSES';
+export const ADD_REVIEWS = 'ADD_REVIEWS';
+export const REVIEWS_FAILED = 'REVIEWS_FAILED';
+
