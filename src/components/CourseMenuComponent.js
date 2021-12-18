@@ -16,7 +16,7 @@ function CourseMenu(props) {
     const foundationMenu = props.courses.courses.filter(course => course.level === "foundation").map((course)=> {
         return (
             <div className={"col-lg-3 col-md-6 mb-5"}>
-                <Card style={cardStyle} sx={{ maxWidth: 345 }}>
+                <Card style={cardStyle}>
                     <Link style={{ textDecoration: 'none' }} to={`/courses/${course.id}`}>
                         <CardHeader
                             titleTypographyProps={{
