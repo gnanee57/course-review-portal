@@ -195,10 +195,10 @@ function CourseDetail(props) {
                     </Breadcrumb>              
                 </div>
                 <div className="row">
-                    <div  className="col-12 col-md-5 m-3">
+                    <div  className="col-12 col-md-5 m-md-3">
                     {renderCourse(props)}
                     </div>
-                    <div  className="col-12 col-md-4 m-5">
+                    <div  className="col-12 col-md-4 m-md-3">
                         <h3>Reviews</h3>
                         {reviews}
                         <ReviewForm
