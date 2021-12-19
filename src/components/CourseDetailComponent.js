@@ -73,7 +73,7 @@ const ReviewForm = (props) => {
                                 </Col>
                             </Row>
                             <Row className="form-group">
-                                <Label htmlFor="review">Your Comment</Label>
+                                <Label htmlFor="review">Your Review</Label>
                                 <Col>
                                     <Control.textarea model=".review" id="review" name="review"
                                         rows="6"
@@ -197,15 +197,26 @@ function CourseDetail(props) {
                 <div className="row">
                     <div  className="col-12 col-md-5 m-md-3">
                     {renderCourse(props)}
+                        <div style={{marginLeft: '30px'}}>
+                            <ReviewForm
+                                postReview={props.postReview}
+                                courseId={props.course.id}
+                                courseName={props.course.name}
+                            />
+                        </div>
                     </div>
-                    <div  className="col-12 col-md-4 m-md-3">
-                        <h3>Reviews</h3>
+                    <div  className="col-12 col-md-4 mt-md-5">
+                        <CardTitle tag="h5" style={{
+                            justifyContent: 'center',
+                            fontFamily: 'Trebuchet MS',
+                        }}>Reviews</CardTitle>
+                        <CardSubtitle className="mb-2 text-muted" style={{
+                            justifyContent: 'center',
+                            fontFamily: 'Trebuchet MS',
+                            fontStyle: 'italic',
+                            fontSize: 'small',
+                        }}>Click on Review Course to review the course</CardSubtitle>
                         {reviews}
-                        <ReviewForm
-                        postReview={props.postReview}
-                        courseId={props.course.id}
-                        courseName={props.course.name}
-                        />
                     </div>
                 </div>
             </div>
