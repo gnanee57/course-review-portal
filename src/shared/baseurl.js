@@ -1,1 +1,1 @@
-export const baseUrl = 'https://nilgiri-house-backend.herokuapp.com/';
+export const baseUrl = 'https://nilgiri-house-backend.gnanee57.repl.co/';
